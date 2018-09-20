@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule ^treasurehunt/?$ treasurehunt.php [NC,L]
+RewriteRule ^treasurehunt/([0-9]+)/?$ treasurehunt.php?id=$1 [NC,L]
+RewriteRule ^treasurehunt/([a-zA-Z]+)/?$ treasurehunt.php?target=$1 [NC,L]
